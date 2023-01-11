@@ -1,49 +1,55 @@
-<!DOCTYPE html>
 <html>
-<head>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
-body {
-  margin: 0;
-  font-family: 'Josefin Sans', sans-serif;
+body {font-family: 'Josefin Sans', sans-serif;}
+
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
 }
 
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-.topnav a {
+.navbar a {
   float: left;
-  text-align: center;
-  padding: 14px 16px;
+  padding: 12px;
+  color: white;
   text-decoration: none;
   font-size: 17px;
 }
 
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
+.navbar a:hover {
+  background-color: #000;
 }
 
-.topnav a.active {
+.active {
   background-color: #04AA6D;
-  color: white;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
 }
 </style>
-<head>
-
 <body>
-<h1 style = "font-family: 'Josefin Sans', sans-serif; font-size: 45px">Erica Rodriguez</h1>
-<div class="topnav">
-  <a class="active" href="#Research">Research</a>
-  <a href="#Mentoring/Outreach">Mentoring/Outreach</a>
-  <a href="#Publications">Publications</a>
-  <a href="#CV">CV</a>
-  <a href="#Contact">Contact</a>
+
+<h2 style = "font-size: 45px">Erica Rodriguez, PhD</h2>
+<p>Neuroscientist</p>
+
+<div class="navbar">
+  <a class="active" href="#"><i class="fa fa-fw fa-user"></i> About</a> 
+  <a href="#"><i class="fa fa-fw fa-search"></i> Research</a> 
+  <a href="#"><i class="fa fa-fw fa-book"></i> Publications</a> 
+  <a href="#"><i class="fa fa-fw fa-lightbulb-o"></i> Mentorship/Outreach</a>
+  <a href="#"><i class="fa fa-fw fa-file-text"></i> CV</a>
+  <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
 </div>
+
 </body>
-</html>
+</html> 
