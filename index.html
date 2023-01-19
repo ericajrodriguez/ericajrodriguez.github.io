@@ -53,17 +53,22 @@ html {
 .leftcolumn {   
   float: left;
   width: 20%;
-  margin-bottom: 16px;
-  padding: 0 8px;
+  padding: 10px;
 }
 
 /* Right column */
 .rightcolumn {
-  float: left;
-  width: 80%;
-  padding-left: 20px;
+  float: right;
+  width: 70%;
+  padding: 5px;
 }
 
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 @media screen and (max-width: 650px) {
   .leftcolumn, .rightcolumn {   
@@ -72,13 +77,18 @@ html {
   }
 }
 
+img {
+  border-radius: 5px 5px 0 0;
+}
+
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px; /* 5px rounded corners */
 }
 
 .container {
-  padding: 1 10px;
-  background-color: #00AF7F
+  padding: 5px 5px;
+  background-color: #white 
 }
 
 .container::after, .row::after {
@@ -88,20 +98,20 @@ html {
 }
 
 .title {
-  color: white;
+  color: gray;
   font-size: 16px;
 }
 
 .button {
   border: none;
   outline: 0;
-  display: inline-block;
-  padding: 2px;
+  display: inline;
+  padding: 5px;
   color: white;
   background-color: #000;
   text-align: center;
   cursor: pointer;
-  width: 100%;
+  width: 50%;
   font-size: 16px;
 }
 
@@ -127,10 +137,11 @@ html {
   <div class="leftcolumn">
     <div class="card">
       <img src="https://media.licdn.com/dms/image/C4D03AQE2dlTsqiXQog/profile-displayphoto-shrink_400_400/0/1571852783511?e=1679529600&v=beta&t=7RgX7aVqah4QP8GD3q7iUs_JivM4wlyBcWaCHz6zLBk" alt="Erica" style="width:100%">
-      <div class="container">
-      <sp>
+        <div class="container">
+          <sp>
         <h2>Erica Rodriguez, PhD</h2>
-        <p class="title">Helen Hay Whitney Postdoctoral Fellow</p>
+        <p class="title">Helen Hay 
+        Whitney Postdoctoral Fellow</p>
         <p>Zuckerman Institute <br> 
           Columbia University</p>
         <p>er2934@columbia.edu</p>
@@ -138,15 +149,34 @@ html {
       </div>
     </div>
   </div>
-
-  <div class="row">
   <div class="rightcolumn">
     <div class="card">
       <h2>About me</h2>
+      </div>
+      </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <div class ="container">
+        <p style="font-family:verdana;text-align:center;">I am a postdoctoral fellow in <u>Dr. Daniel Salzman's lab</u> at <strong>Columbia University's Zuckerman Mind, Brain, and Behavior</strong>. My research has been supported by an NIMH T32 training grant and the <em>Helen Hay Whitney Foundation</em>.My research focuses on how dynamic social constructs drive motivated behavior in mice. 
+     </div>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <div class ="container">
+        <p style="font-family:verdana;text-align:center;">I received my PhD in Neurobiology with <u>Dr. Fan Wang</u> at <strong>Duke University</strong> examining the neural circuitry underlying heightened facial pain perception and neural circuitry underlying satiety. This research was supported by <em>NIDCR's F31 fellowship</em>.
+      </div>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <div class ="container">
+        <p style="font-family:verdana;text-align:center;"> I received my B.A in Biology/Neuroscience and Psychology through the <strong>Macaulay Honors College at CUNY Queens College</strong>. Under the guidance of <u>Dr. Carolyn Pytte</u>, my undergrauate research focus was understanding the effects of songbird vocalization on neurogenesis in the adult male Zebra finch. 
+      </p>
+      </div>
     </div>
   </div>
 </div>
-
 
 </body>
 </html> 
