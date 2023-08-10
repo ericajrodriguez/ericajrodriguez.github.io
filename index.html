@@ -7,7 +7,14 @@
 <script src="https://kit.fontawesome.com/35b07dd601.js" crossorigin="anonymous"></script>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
-body {font-family: 'Josefin Sans', sans-serif;}
+body {font-family: 'Josefin Sans', sans-serif;
+            background-color: #FFFFFF; /* White background for the top part */
+            margin: 0; /* Reset margin to remove default spacing */
+            padding: 0; /* Reset padding to remove default spacing */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
 
 .navbar {
   width: 100%;
@@ -38,10 +45,11 @@ body {font-family: 'Josefin Sans', sans-serif;}
   }
 }
 
-body {
-  background-color: #F4E9DD; /* Beige background color */
-  /* Additional styles for the body */
-}
+.content {
+            flex: 1;
+            background-color: #F4E9DD; /* Beige background for the bottom part */
+            padding: 20px; /* Add padding to separate content from the edges */
+        }
 
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -140,14 +148,16 @@ img {
 }
 </style>
 <body>
-<div class="row">
-  <div class="title1">
+<div class = "content">
+  <div class="row">
+    <div class="title1">
       <h1>Erica Rodriguez, PhD</h1>
       <p class="title2">NIGMS MOSAIC K99/R00 Scholar
       </p>
       <p>Zuckerman Mind, Brain and Behavior Institute<br> 
           Columbia University</p>
       </sp>
+    </div>
   </div>
 </div>
 
