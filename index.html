@@ -18,9 +18,15 @@ body {font-family: 'Josefin Sans', sans-serif;
     min-height: 100vh;
 }
     .background-crop {
-    flex: 1;
-    clip-path: polygon(0% 30%, 100% 30%, 100% 30%, 0% 50%); /* Crop top half */
-        }
+    position: absolute;
+    top: 50%;/* Crop bottom half */
+    left: 0;
+    right: 0;
+    bottom: 0; 
+    background-image: url('path-to-your-image.jpg'); /* Set the path to your image */
+    background-size: cover;
+    background-position: center top; /* Start the image at the top center of the background area */
+  }
 
 .navbar {
   width: 100%;
