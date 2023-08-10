@@ -16,6 +16,10 @@ body {font-family: 'Josefin Sans', sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 150vh;
+}
+    .background-crop {
+    flex: 1;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 50%); /* Crop top half */
         }
 
 .navbar {
@@ -156,6 +160,7 @@ img {
 }
 </style>
 <body>
+<div class="background-crop"></div>
   <div class="row">
     <div class="title1">
       <h1>Erica Rodriguez, PhD</h1>
@@ -166,6 +171,7 @@ img {
       </sp>
     </div>
   </div>
+</div>
 
 <br>
   
