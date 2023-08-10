@@ -89,7 +89,7 @@ img {
 .container {
   padding: 1px 5px;
   border-radius: 5px; /* 5px rounded corners */
-  background-color:white;
+  background-color:f0f0f0;
 }
 
 .container::after, .row::after {
@@ -98,7 +98,13 @@ img {
   display: table;
 }
 
-.title {
+.title1 {
+  text-align: center;
+  color: black;
+  font-size: 32px;
+}
+.title2 {
+  text-align: center;
   color: gray;
   font-size: 16px;
 }
@@ -120,9 +126,25 @@ img {
   background-color: #555;
 }
 
+.circular-image {
+  border-radius: 50%;
+  background-color:f0f0f0;
+}
 </style>
 <body>
+<div class="row">
+  <div class="title1">
+      <h1>Erica Rodriguez, PhD</h1>
+      <p class="title2">NIGMS MOSAIC K99/R00 Scholar
+      </p>
+      <p>Zuckerman Institute <br> 
+          Columbia University</p>
+      </sp>
+  </div>
+</div>
 
+<br>
+  
 <div class="navbar">
   <a class="active" href="#"><i class="fas fa-fw fa-user"></i> About</a> 
   <a href="#"><i class="fas fa-microscope"></i> Research</a> 
@@ -137,7 +159,7 @@ img {
 <div class="row">
   <div class="leftcolumn">
     <div class="card">
-      <img src="Headshot2_2023.jpg" style="width:100%">
+      <img src="Headshot2_2023.jpg" class="circular-image" style="width:100%">
       <div class="container">
       <sp>
         <h2>Erica Rodriguez, PhD</h2>
