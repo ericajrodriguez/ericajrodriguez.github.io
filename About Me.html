@@ -1,12 +1,13 @@
 <html>
+<head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/35b07dd601.js" crossorigin="anonymous"></script>
-<head>
 <style>
+
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
 body {font-family: 'Josefin Sans', sans-serif;
     top: 50%;/* Crop bottom half */
@@ -24,7 +25,7 @@ body {font-family: 'Josefin Sans', sans-serif;
     min-height: 100vh;
   }
 
-  h1 {
+h1 {
   text-shadow: 1px 1px powderblue;
 }
 
@@ -87,7 +88,6 @@ body {font-family: 'Josefin Sans', sans-serif;
   border-radius: 15px; /* circular */
 }
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
 
 html {
   box-sizing: border-box;
@@ -107,13 +107,43 @@ html {
 }
 
 /* Right column */
-.rightcolumn {
+.column2 {
   float: right;
-  width: 75%;
+  width: 25%;
+  padding: 8px;
+
+}
+.column3 {float: right;
+  width: 25%;
   padding: 8px;
 
 }
 
+.column4 {float: right;
+  width: 25%;
+  padding: 8px;
+
+}
+
+/* Clear floats after the columns */
+.row1:after {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  content: "";
+  display: table;
+  clear: both;
+}
+.row2:after {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Space columns evenly with some space on both sides */
+  align-items: center;/* Align columns vertically in the center */
+  content: "";
+  display: table;
+  clear: both;
+}
 
 @media screen and (max-width: 650px) {
   .leftcolumn, .rightcolumn {   
@@ -156,6 +186,12 @@ img {
 .title2 {
   text-align: center;
   color: floralwhite;
+  font-size: 19px;
+}
+
+.title3 {
+  text-align: center;
+  color: black;
   font-size: 19px;
 }
 
@@ -245,17 +281,23 @@ footer {
     <br>
       <div><img src="Headshot2_2023.jpg" class="circular-image" style="width:100%"></div>
   </div>
-  <div class = "rightcolumn">
-    <div class ="grid-container">
-
-    <div><p style="font-family:verdana;text-align:center;">I am an Associate Research Scientist in <u>Dr. Daniel Salzman's lab</u> at <strong>Columbia University</strong>. My research has been supported by an NIMH T32 training grant, the <em>Helen Hay Whitney Foundation</em>, and now the <em>NIGMS MOSAIC K99/R00</em>. My research focuses on how dynamic social constructs drive motivated behavior in mice. </div>
-
-    <div><p style="font-family:verdana;text-align:center;">I received my PhD in Neurobiology with <u>Dr. Fan Wang</u> at <strong>Duke University</strong> examining the neural circuitry underlying heightened facial pain perception and neural circuitry underlying satiety. This research was supported by <em>NIDCR's F31 fellowship</em>.</div>
-
-    <div><p style="font-family:verdana;text-align:center;"> I received my B.A in Biology/Neuroscience and Psychology through the <strong>Macaulay Honors College at CUNY Queens College</strong>. Under the guidance of <u>Dr. Carolyn Pytte</u>, my undergrauate research focus was understanding the effects of songbird vocalization on neurogenesis in the adult male Zebra finch. </div>
-    </div>
-  </div>
+  <div class = "column2">
+    <div class = "container">
+    <div><p style="font-family:verdana;text-align:center;">I am an Associate Research Scientist in <u>Dr. Daniel Salzman's lab</u> at <strong>Columbia University</strong>. My research has been supported by an NIMH T32 training grant, the <em>Helen Hay Whitney Foundation</em>, and now the <em>NIGMS MOSAIC K99/R00</em>. My research focuses on how dynamic social constructs drive motivated behavior in mice. </p></div>
 </div>
+<div class = "column3">
+  <div class = "container">
+    <div><p style="font-family:verdana;text-align:center;">I received my PhD in Neurobiology with <u>Dr. Fan Wang</u> at <strong>Duke University</strong> examining the neural circuitry underlying heightened facial pain perception and neural circuitry underlying satiety. This research was supported by <em>NIDCR's F31 fellowship</em>.</p></div>
+  </div>
+    </div>
+
+  <div class = "column4">
+    <div class = "container">
+    <div><p style="font-family:verdana;text-align:center;"> I received my B.A in Biology/Neuroscience and Psychology through the <strong>Macaulay Honors College at CUNY Queens College</strong>. Under the guidance of <u>Dr. Carolyn Pytte</u>, my undergrauate research focus was understanding the effects of songbird vocalization on neurogenesis in the adult male Zebra finch. </p></div>
+  </div>
+  </div>
+    </div>
+
 
 <footer>
 </footer>
