@@ -9,20 +9,26 @@
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
 body {font-family: 'Josefin Sans', sans-serif;
+  background-color: #01445B;
 }
 
 header{
     background-image: url('Mouse_The_Scream_cropped.jpg'); /* Set the path to your image */
-  adding: 10px;
-  text-align: center;
-  color: white;
-}
-  /* Style the footer */
-footer {
-  background-image: url('Mouse_The_Scream_cropped.jpg'); 
   padding: 10px;
   text-align: center;
-  color: white;
+}
+  /* Style the footer */
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  background-image: url('Mouse_The_Scream_cropped.jpg'); 
+  padding: 0px;
 }
   h1 {
   text-shadow: 1px 1px powderblue;
@@ -87,6 +93,7 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
 /* Create two unequal columns that floats next to each other */
 /* Left column */
 .leftcolumn {   
@@ -102,15 +109,6 @@ html {
   float: right;
   width: 75%;
   padding: 8px;
-
-}
-
-
-@media screen and (max-width: 650px) {
-  .leftcolumn, .rightcolumn {   
-    width: 100%;
-    padding: 0;
-  }
 }
 
 img {
@@ -210,7 +208,7 @@ img {
     </div>
 </div>
 </header>
-  
+<section> 
 <div class="navbar">
   <a href="About Me"><i class="fas fa-fw fa-user"></i> About</a> 
   <a href="#"><i class="fas fa-microscope"></i> Research</a> 
@@ -252,7 +250,7 @@ img {
     </div>
   </div>
 </div>
-
+</section>
 <footer>
 </footer>
 </body>
