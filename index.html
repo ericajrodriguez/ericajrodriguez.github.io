@@ -1,11 +1,11 @@
 <html>
-<head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/35b07dd601.js" crossorigin="anonymous"></script>
+<head>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
 body {font-family: 'Josefin Sans', sans-serif;
@@ -117,15 +117,6 @@ html {
   clear: both;
 }
 
- /* Adjust the order of specific columns */
-  .rightcolumn:nth-child(2) {
-    order: 1; /* Move the second column to the left */
-  }
-
-  .rightcolumn:nth-child(3) {
-    order: 3; /* Move the third column to the right */
-  }
-
 @media screen and (max-width: 650px) {
   .leftcolumn, .rightcolumn {   
     width: 100%;
@@ -161,7 +152,7 @@ img {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 1f 1f 1f;/* Three equal columns */
+    grid-template-columns: 1f 1f 1f 1f;/* Three equal columns */
     grid-gap: 10px; /* Gap between grid items */
      background-color: #2196F3;
   padding: 10px;
@@ -280,7 +271,5 @@ img {
     </div>
   </div>
 </div>
-
-
 </body>
 </html> 
