@@ -1,12 +1,29 @@
 <html>
+<head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/35b07dd601.js" crossorigin="anonymous"></script>
-<head>
 <style>
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  body {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  body, .navbar, .leftcolumn, .gridcontainer, .footer {
+    width: 100%;
+  }
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
 body {font-family: 'Josefin Sans', sans-serif;
     top: 50%;/* Crop bottom half */
@@ -24,7 +41,7 @@ body {font-family: 'Josefin Sans', sans-serif;
     min-height: 100vh;
   }
 
-  h1 {
+h1 {
   text-shadow: 1px 1px powderblue;
 }
 
@@ -87,7 +104,6 @@ body {font-family: 'Josefin Sans', sans-serif;
   border-radius: 15px; /* circular */
 }
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
 
 html {
   box-sizing: border-box;
