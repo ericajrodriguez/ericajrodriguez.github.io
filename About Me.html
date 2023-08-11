@@ -1,0 +1,261 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/35b07dd601.js" crossorigin="anonymous"></script>
+<head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+body {font-family: 'Josefin Sans', sans-serif;
+    top: 50%;/* Crop bottom half */
+    left: 0;
+    right: 0;
+    bottom: 0; 
+    background-image: url('Mouse_The_Scream_cropped.jpg'); /* Set the path to your image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-size: contain;
+    background-position: center top; /* Start the image at the top center of the background area */
+    margin: 0; /* Reset margin to remove default spacing */
+    padding: 0; /* Reset padding to remove default spacing */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  h1 {
+  text-shadow: 1px 1px powderblue;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #01445B;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #8B022E;
+}
+.active a {
+  float: left;
+  padding: 12px;
+  color: black;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+
+.content {
+           background-color: #8B022E;
+           padding: 20px; 
+        }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  gap: 10px;
+  background-color: #8B022E;
+  padding: 20px;
+}
+
+.grid-container > div {
+  background-color: #E2DAC0;
+  text-align: center;
+  padding: 21px 1;
+  border-radius: 15px;
+  font-size: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 15px; /* circular */
+}
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  text-align:center;
+  width: 22%;
+  padding: 2px;
+
+}
+
+/* Right column */
+.rightcolumn {
+  float: right;
+  width: 75%;
+  padding: 8px;
+
+}
+
+
+@media screen and (max-width: 650px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+
+img {
+  border-radius: 5px 5px 0 0;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 50%; /* circular */
+}
+.card2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px; /* circular */
+}
+
+.container {
+  padding: 1px 5px;
+  border-radius: 5px; /* 5px rounded corners */
+  background-color:C89A0C;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title1 {
+  text-align: center;
+  color: #01445B;
+  font-size: 22px;
+}
+.title2 {
+  text-align: center;
+  color: floralwhite;
+  font-size: 19px;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline;
+  padding: 5px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 50%;
+  font-size: 16px;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+.circular-image {
+  border-radius: 50%;
+  background-color:f0f0f0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 24px;
+    color: #floralwhite;
+  }
+
+  /* Style the footer */
+footer {
+  background-image: url('Mouse_The_Scream_cropped.jpg'); 
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+</style>
+
+<html>
+<body>
+<div class="background-crop"></div>
+  <div class="row">
+    <div class="title1">
+      <h1>Erica Rodriguez, PhD</h1>
+      <p class="title2">NIGMS MOSAIC K99/R00 Scholar
+      </p>
+      <p class="title2">Zuckerman Mind, Brain and Behavior Institute<br> 
+          Columbia University</p>
+      </sp>
+      <div class="social-icons">
+        <a href="https://twitter.com/EricaRodrig1" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/erica-rodriguez-96528065/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:er2934@cumc.columbia.edu"><i class="fas fa-envelope"></i></a>
+          <!-- Add more icons and links as needed -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<br>
+<br>
+  
+<div class="navbar">
+  <a class="active" href="About Me"><i class="fas fa-fw fa-user"></i> About</a> 
+  <a href="#"><i class="fas fa-microscope"></i> Research</a> 
+  <a href="Publications"><i class="fas fa-newspaper"></i> Publications</a> 
+  <a href="#"><i class="fas fa-chalkboard-teacher"></i> Mentorship/Outreach</a>
+  <a href="#"><i class="fa fa-file-alt"></i> CV</a>
+  <a href="#"><i class="fa fa-envelope"></i> Contact</a>
+</div>
+
+<div class = "content">
+  <div class = "leftcolumn">
+      <div><img src="Headshot2_2023.jpg" class="circular-image" style="width:100%"></div>
+  </div>
+  <div class = "rightcolumn">
+    <div class ="grid-container">
+
+    <div><p style="font-family:verdana;text-align:center;">I am an Associate Research Scientist in <u>Dr. Daniel Salzman's lab</u> at <strong>Columbia University</strong>. My research has been supported by an NIMH T32 training grant, the <em>Helen Hay Whitney Foundation</em>, and now the <em>NIGMS MOSAIC K99/R00</em>. My research focuses on how dynamic social constructs drive motivated behavior in mice. </div>
+
+    <div><p style="font-family:verdana;text-align:center;">I received my PhD in Neurobiology with <u>Dr. Fan Wang</u> at <strong>Duke University</strong> examining the neural circuitry underlying heightened facial pain perception and neural circuitry underlying satiety. This research was supported by <em>NIDCR's F31 fellowship</em>.</div>
+
+    <div><p style="font-family:verdana;text-align:center;"> I received my B.A in Biology/Neuroscience and Psychology through the <strong>Macaulay Honors College at CUNY Queens College</strong>. Under the guidance of <u>Dr. Carolyn Pytte</u>, my undergrauate research focus was understanding the effects of songbird vocalization on neurogenesis in the adult male Zebra finch. </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+</footer>
+</body>
+</html> 
