@@ -7,6 +7,7 @@
 <script src="https://kit.fontawesome.com/35b07dd601.js" crossorigin="anonymous"></script>
 <head>
 <style>
+
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
 body {font-family: 'Josefin Sans', sans-serif;
     top: 50%;/* Crop bottom half */
@@ -65,7 +66,21 @@ body {font-family: 'Josefin Sans', sans-serif;
            padding: 20px; 
         }
 
-<head>
+.grid-container {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  gap: 10px;
+  background-color: #E18D13;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: navajowhite;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 html {
@@ -149,22 +164,6 @@ img {
   clear: both;
   display: table;
 }
-
-.grid-container {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;/* Four equal columns */
-    grid-gap: 10px; /* Gap between grid items */
-     background-color: #2196F3;
-  padding: 10px;
-  }
-
-  .grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
-}
-
 
 .title1 {
   text-align: center;
