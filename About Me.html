@@ -21,8 +21,7 @@ body {font-family: 'Josefin Sans', sans-serif;
     padding: 0; /* Reset padding to remove default spacing */
     display: flex;
     flex-direction: column;
-    height: 100%;
-    width: 100%;
+    min-height: 100vh;
   }
 
   h1 {
@@ -64,12 +63,6 @@ body {font-family: 'Josefin Sans', sans-serif;
     display: block;
   }
 }
-
-@media screen and (max-width: 500px) {
-  .grid-container {
-    float: none;
-    grid-template-rows: auto auto auto
-  }
 
 .content {
            background-color: #8B022E;
@@ -121,6 +114,13 @@ html {
 
 }
 
+
+@media screen and (max-width: 650px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
 
 
 img {
