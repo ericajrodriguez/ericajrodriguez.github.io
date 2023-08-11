@@ -1,4 +1,5 @@
 <html>
+<head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -159,15 +160,19 @@ img {
 }
 
 .grid-container {
-    display: table-column-group;
-    grid-template-columns: 100px 200px 150px;/* Three equal columns */
+    display: grid;
+    grid-template-columns: 1f 1f 1f;/* Three equal columns */
     grid-gap: 10px; /* Gap between grid items */
+     background-color: #2196F3;
+  padding: 10px;
   }
 
-  .grid-item {
-    background-color: gray;
-    padding: 20px;
-  }
+  .grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
 
 
 .title1 {
@@ -265,13 +270,13 @@ img {
     </div>
     <div class="rightcolumn">
         <div class ="gridcontainer">
-            <div class = "grid-item">
+            <div>
           <p style="font-family:verdana;text-align:center;">I am a Associate Research Scientist in <u>Dr. Daniel Salzman's lab</u> at <strong>Columbia University's Zuckerman Mind, Brain, and Behavior</strong>. My research has been supported by an NIMH T32 training grant and the <em>Helen Hay Whitney Foundation</em>. It is currently funded by NIGMS MOSAIC K99/R00. My research focuses on how dynamic social constructs drive motivated behavior in mice. 
         </div>
-        <div class = "grid-item">
+        <div>
           <p style="font-family:verdana;text-align:center;">I received my PhD in Neurobiology with <u>Dr. Fan Wang</u> at <strong>Duke University</strong> examining the neural circuitry underlying heightened facial pain perception and neural circuitry underlying satiety. This research was supported by <em>NIDCR's F31 fellowship</em>.
         </div>
-        <div class = "grid-item">
+        <div>
           <p style="font-family:verdana;text-align:center;"> I received my B.A in Biology/Neuroscience and Psychology through the <strong>Macaulay Honors College at CUNY Queens College</strong>. Under the guidance of <u>Dr. Carolyn Pytte</u>, my undergrauate research focus was understanding the effects of songbird vocalization on neurogenesis in the adult male Zebra finch. 
         </div>
       </div>
