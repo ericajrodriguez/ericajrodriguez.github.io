@@ -109,12 +109,21 @@ html {
 .row2:after {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: space-around; /* Space columns evenly with some space on both sides */
+  align-items: center;/* Align columns vertically in the center */
   content: "";
   display: table;
   clear: both;
 }
+
+ /* Adjust the order of specific columns */
+  .rightcolumn:nth-child(2) {
+    order: 1; /* Move the second column to the left */
+  }
+
+  .rightcolumn:nth-child(3) {
+    order: 3; /* Move the third column to the right */
+  }
 
 @media screen and (max-width: 650px) {
   .leftcolumn, .rightcolumn {   
@@ -237,12 +246,12 @@ img {
 </div>
 <div class = "content">
   <div class="row2">
-    <div class="column">
+    <div class="leftcolumn">
       <div class="card">
         <img src="Headshot2_2023.jpg" class="circular-image" style="width:100%">
       </div>
     </div>
-    <div class="column">
+    <div class="rightcolumn">
       <div class="card2" style = "width:30%">
         <div class ="container">
           <p style="font-family:verdana;text-align:center;">I am a Associate Research Scientist in <u>Dr. Daniel Salzman's lab</u> at <strong>Columbia University's Zuckerman Mind, Brain, and Behavior</strong>. My research has been supported by an NIMH T32 training grant and the <em>Helen Hay Whitney Foundation</em>.My research focuses on how dynamic social constructs drive motivated behavior in mice. 
