@@ -90,6 +90,14 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /* Create two unequal columns that floats next to each other */
 /* Left column */
 .column1 {   
@@ -275,6 +283,7 @@ footer {
 </div>
 
 <div class = "content">
+  <div class = "row">
   <div class = "column1">
     <br>
     <br>
@@ -303,7 +312,7 @@ footer {
     <div><p style="font-family:verdana;text-align:center;"> I received my B.A in Biology/Neuroscience and Psychology through the <strong>Macaulay Honors College at CUNY Queens College</strong>. Under the guidance of <u>Dr. Carolyn Pytte</u>, my undergrauate research focus was understanding the effects of songbird vocalization on neurogenesis in the adult male Zebra finch. </p></div>
   </div>
     </div>
-
+</div>
 
 <footer>
   <br>
