@@ -27,13 +27,13 @@ h1 {
   text-shadow: 1px 1px powderblue;
 }
 
-.navbar {
+.topnav {
   width: 100%;
   background-color: #01445B;
   overflow: auto;
 }
 
-.navbar a {
+.topnav a {
   float: left;
   padding: 12px;
   color: white;
@@ -56,25 +56,25 @@ h1 {
   font-size: 15px;
 }
 
-.navbar .icon {
+.topnav .icon {
   display: none;
 }
 
 @media screen and (max-width: 600px) {
-  .navbar a:not(:first-child) {display: none;}
-  .navbar a.icon {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
     float: right;
     display: block;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .navbar.responsive .icon {
+  .topnav.responsive .icon {
     position: absolute;
     right: 0;
     bottom:0;
   }
-  .navbar.responsive a {
+  .topnav.responsive a {
     float: none;
     display: block;
     text-align: left;
@@ -309,7 +309,7 @@ footer {
 <br>
 <br>
   
-<div class="navbar" id = "myTopnav">
+<div class="topnav" id = "myTopnav">
   <a class="active" href="About Me"><i class="fas fa-fw fa-user"></i> About</a> 
   <a href="#"><i class="fas fa-microscope"></i> Research</a> 
   <a href="Publications"><i class="fas fa-newspaper"></i> Publications</a> 
@@ -354,7 +354,7 @@ function myFunction() {
   if (x.className === "topnav") {
     x.className += "responsive";
   } else {
-    x.className = "navbar";
+    x.className = "topnav";
   </script>
 </body>
 </html> 
