@@ -12,13 +12,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
 body {font-family: 'Josefin Sans', sans-serif;
-    top: 50%;/* Crop bottom half */
-    left: 0;
-    right: 0;
-    bottom: 0; 
     background-image: url('Mouse_The_Scream_cropped.jpg'); /* Set the path to your image */
     background-repeat: no-repeat; /* Prevent the image from repeating */
-    background-size: contain;
+    background-size: cover;
     background-position: center top; /* Start the image at the top center of the background area */
     margin: 0; /* Reset margin to remove default spacing */
     padding: 0; /* Reset padding to remove default spacing */
@@ -247,7 +243,7 @@ footer {
 }
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .column1, .column2, .column3, .column4  {
+  .navbar, .column1, .column2, .column3, .column4  {
     width: 100%;
   }
 }
