@@ -7,13 +7,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/35b07dd601.js" crossorigin="anonymous"></script>
 <style>
-  
-@media screen and (max-width: 500px) {
-  .navbar a {
-    float: none;
-    display: block;
-  }
-}
 
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
 body {font-family: 'Josefin Sans', sans-serif;
@@ -65,7 +58,6 @@ h1 {
   font-size: 15px;
 }
 
-}
 .content {
            background-color: #8B022E;
            padding: 20px; 
@@ -89,7 +81,6 @@ h1 {
   border-radius: 15px; /* circular */
 }
 
-
 html {
   box-sizing: border-box;
 }
@@ -99,7 +90,7 @@ html {
 }
 /* Create two unequal columns that floats next to each other */
 /* Left column */
-.leftcolumn {   
+.colum1 {   
   float: left;
   text-align:center;
   width: 22%;
@@ -110,17 +101,22 @@ html {
 /* Right column */
 .column2 {
   float: right;
+  text-align:center;
   width: 25%;
   padding: 8px;
 
 }
-.column3 {float: right;
+.column3 {
+  float: right;
+  text-align:center;
   width: 25%;
   padding: 8px;
 
 }
 
-.column4 {float: right;
+.column4 {
+  float: right;
+  text-align:center;
   width: 25%;
   padding: 8px;
 
@@ -145,6 +141,14 @@ html {
   display: table;
   clear: both;
 }
+
+@media screen and (max-width: 650px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
 
 img {
   border-radius: 5px 5px 0 0;
@@ -227,7 +231,7 @@ img {
   /* Style the footer */
 footer {
   background-image: url('Mouse_The_Scream_cropped.jpg'); 
-  padding: 30px;
+  padding: 10px;
   text-align: center;
   color: white;
 }
@@ -288,6 +292,9 @@ footer {
 
 
 <footer>
+  <br>
+  <br>
+  <br>
 </footer>
 </body>
 </html> 
