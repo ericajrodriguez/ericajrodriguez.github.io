@@ -309,7 +309,7 @@ footer {
 <br>
 <br>
   
-<div class="navbar">
+<div class="navbar" id = "myTopnav">
   <a class="active" href="About Me"><i class="fas fa-fw fa-user"></i> About</a> 
   <a href="#"><i class="fas fa-microscope"></i> Research</a> 
   <a href="Publications"><i class="fas fa-newspaper"></i> Publications</a> 
@@ -349,9 +349,9 @@ footer {
 
 <script>
 function myFunction() {
-  var x = document.getElementById("navbar");
+  var x = document.getElementById("myTopnav");
   if (x.className === "navbar") {
-    x.className += "navbar.responsive";
+    x.className += "responsive";
   } else {
     x.className = "navbar";
   </script>
