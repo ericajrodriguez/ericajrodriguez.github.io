@@ -131,25 +131,25 @@ html {
 }
 
 /* Right column */
-.column2 {
+.row2 {
   float: right;
   text-align:center;
-  width: 25%;
+  width: 75%;
   padding: 8px;
 
 }
-.column3 {
+.row3 {
   float: right;
   text-align:center;
-  width: 25%;
+  width: 75%;
   padding: 8px;
 
 }
 
-.column4 {
+.row4 {
   float: right;
   text-align:center;
-  width: 25%;
+  width: 75%;
   padding: 8px;
 
 }
@@ -164,15 +164,7 @@ html {
   display: table;
   clear: both;
 }
-.row2:after {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around; /* Space columns evenly with some space on both sides */
-  align-items: center;/* Align columns vertically in the center */
-  content: "";
-  display: table;
-  clear: both;
-}
+
 
 @media screen and (max-width: 650px) {
   .leftcolumn, .rightcolumn {   
@@ -205,7 +197,7 @@ img {
   padding: 2px 5px;
   border-radius: 5px; /* 5px rounded corners */
   background-color:floralwhite;
-  border-right:1px solid black
+  border-left:1px solid black
 }
 
 .container::after, .row::after {
@@ -346,7 +338,7 @@ function myFunction() {
     </div>
 
 
-    <div class = "column3">
+    <div class = "row2">
       <br>
       <br>
       <br>
@@ -355,7 +347,7 @@ function myFunction() {
       </div>
     </div>
 
-    <div class = "column2">
+    <div class = "row3">
       <br>
       <br>
       <br>
@@ -366,7 +358,7 @@ function myFunction() {
   </div>
 </div>
 
-<div class = "content">
+<div class = "row4">
   <div class = "row">
 
 </body>
